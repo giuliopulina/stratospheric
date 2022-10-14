@@ -96,6 +96,7 @@ public class CognitoStack extends Stack {
       .supportedIdentityProviders(Collections.singletonList(UserPoolClientIdentityProvider.COGNITO))
       .build();
 
+    // https://stratospheric.auth.eu-central-1-amazoncognito.com
     this.userPoolDomain = UserPoolDomain.Builder.create(this, "userPoolDomain")
       .userPool(this.userPool)
       .cognitoDomain(CognitoDomainOptions.builder()

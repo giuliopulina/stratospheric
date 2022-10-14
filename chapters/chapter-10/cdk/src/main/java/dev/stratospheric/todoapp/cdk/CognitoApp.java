@@ -25,6 +25,7 @@ public class CognitoApp {
     String applicationUrl = (String) app.getNode().tryGetContext("applicationUrl");
     requireNonEmpty(applicationUrl, "context variable 'applicationUrl' must not be null");
 
+    // https://<prefix>.auth.<region>.amazoncognito.com
     String loginPageDomainPrefix = (String) app.getNode().tryGetContext("loginPageDomainPrefix");
     requireNonEmpty(loginPageDomainPrefix, "context variable 'loginPageDomainPrefix' must not be null");
 
