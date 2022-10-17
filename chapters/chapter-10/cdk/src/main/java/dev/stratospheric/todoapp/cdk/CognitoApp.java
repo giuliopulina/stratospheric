@@ -22,6 +22,7 @@ public class CognitoApp {
     String region = (String) app.getNode().tryGetContext("region");
     requireNonEmpty(region, "context variable 'region' must not be null");
 
+    // https://app.stratospheric.dev
     String applicationUrl = (String) app.getNode().tryGetContext("applicationUrl");
     requireNonEmpty(applicationUrl, "context variable 'applicationUrl' must not be null");
 
